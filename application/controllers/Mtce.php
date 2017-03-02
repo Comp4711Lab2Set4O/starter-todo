@@ -5,10 +5,11 @@ class Mtce extends Application {
 
         public function index()
         {
+
         $this->page(1);
 		}
 
-        // Show a single page of todo items 
+    // Show a single page of todo items 
 		private function show_page($tasks)
 		{
 			$this->data['pagetitle'] = 'TODO List Maintenance';
