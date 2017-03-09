@@ -113,9 +113,9 @@ class Mtce extends Application {
 		    $fields = array(
 			'ftask' => makeTextField('Task description', 'task', $task->task, 'Work', "What needs to be done?"),
 			'fpriority' => makeComboBox('Priority', 'priority', $task->priority, $priparms, "How important is this task?"),
-			'fsize' => makeComboBox('Size', 'Task size', $task->size, $sizeparms, "What is the size of this task?"),
-			'fgroup' => makeComboBox('Group', 'Task group', $task->group, "Which group is this task?"),
-			'fstatus' => makeComboBox('Status', 'Task status', $task->status, "What's the current status of this task?"),
+			'fsize' => makeComboBox('Task size', 'size', $task->size, $sizeparms, "What is the size of this task?"),
+			'fgroup' => makeComboBox('Task group', 'group', $task->group, $groparms, "Which group is this task?"),
+			'fstatus' => makeComboBox('Task status', 'status', $task->status, $statparms, "What's the current status of this task?"),
 			'zsubmit' => makeSubmitButton('Update the TODO task', "Click on home or <back> if you don't want to change anything!", 'btn-success'),
 		    );
 		    $this->data = array_merge($this->data, $fields);
